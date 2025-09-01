@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes Question</title>
+</head>
+<body>
+    <script>
+
+// 1. Celsius to Fahrenheit
+       function cfconverter(){
+            return (celsius * 9/5) + 32;
+        }
+        let celsius = prompt("Enter Temperature in C");
+        let fahrenheit = cfconverter(celsius);
+        console.log(celsius + "°C =" + fahrenheit + "°F"); 
+
+// 2. Kilometer to Miles Converter
+        function kmTomiles(km){
+            return km * 0.621371;
+        }
+        let distances = prompt("Enter Distance in km");
+        distances = Number(distances);
+        let miles = kmTomiles(distances);
+        console.log(distances + "km =" + miles + "mi");
+
+// 3. Miles to Kilometer Converter
+        function milesTokm(miles){
+            return miles * 1.60934;
+        }
+        // let distance = prompt("Enter Distance in miles");
+        let distance = 5;
+        distance = Number(distance);
+        let km = milesTokm(distance);
+        console.log(distance + " miles = " + km + " km");  
+
+// 4. Celsius to Kelvin Converter
+        function celsiusToKelvin(celsius){
+            return celsius + 273.15;
+        }
+        let Temperature = 5;
+        let Kelvin = celsiusToKelvin(Temperature);
+        console.log(Temperature + "°C =" + Kelvin + "°K"); 
+
+// 5. Rectangle Area Calculator     
+        function rectangleArea(length , breadth){
+            return length * breadth;
+        }
+        // let length = prompt("Enter Length in cm");
+        // let breadth = prompt("Enter breadth in cm");
+        let length = 5;
+        let breadth = 9;
+        let area = rectangleArea(length, breadth);
+        console.log("Area = " + area + "cm²"); 
+
+// 6. Tip Calculator
+        function tipCalculator(billAmount, tipPercentage){
+            let tip = (billAmount * tipPercentage) / 100;
+            let totalBill = billAmount + tip;
+            return [tip, totalBill];
+        }
+        let bill = Number(prompt("Enter Bill amount"));
+        let tipPercentage = 10;
+
+        let result = tipCalculator(bill, tipPercentage);
+        let tip = result[0];
+        let total = result[1];
+        console.log("Tip = Rs " + tip);
+        console.log("Total Bill = Rs " + total);
+
+    </script>
+
+</body>
+</html>

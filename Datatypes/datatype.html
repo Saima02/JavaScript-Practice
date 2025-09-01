@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes Practice</title>
+</head>
+<body>
+    <script>
+        let x = 45; //number
+        console.log(x);
+        console.log(typeof x);
+
+        let y = true; //boolean
+        console.log(y);
+        console.log(typeof y);
+
+        let z = "true"; //string with " "
+        console.log(typeof z , z);
+
+        var b ; //undefined
+        console.log(typeof b, b);
+
+        var a = null; //null
+        console.log(typeof a , a);
+
+        let c = ["apple", "mango", "banana"]; //array
+        console.log(typeof c, c);
+
+        function greet() {return "Hello";}
+        console.log(greet());
+
+        function hello(){
+            console.log("Hiii");
+        }
+        hello();
+
+        function ordercake(flavour){
+            return flavour + "Cake ready hai";
+        }
+        let mycake = ordercake("Chocolate ");
+        console.log(mycake);
+
+        function birthdaywish(message){
+            return "Happy Birthday " + message;
+        }
+        let messageforu = birthdaywish("Saima");
+        console.log(messageforu);
+
+        function paragraph(message){
+            return "Happy Birthday " + message + 
+            "\nMay God bless You with Good health and life";
+        }
+        let message = paragraph("Saima !!");
+        console.log(message)
+
+    </script>
+</body>
+</html>
