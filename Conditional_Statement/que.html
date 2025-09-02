@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Quetion 1: Age check
+        const age = Number(prompt("Enter your age"));
+        if ( age >= 18 ) {
+            console.log("You can vote");
+        } else {
+            console.log("you are not eligible");  
+        }
+        let result = (age >= 18) ? "You can vote": "You are not eligible"; // Ternary statemnet
+        console.log(result); 
+
+    // Question 2: Even odd
+        const num1 = 5;
+        let yournum = (num1 % 2 === 0) ? "Even": "Odd";
+        console.log(yournum);
+    
+    //Question 3: Student Grade
+
+            let marks = Number(prompt("Enter your marks"));
+            if (marks >= 90){
+                console.log("Grade A");
+            } else if ( marks >= 75) {
+                console.log("Grade B");
+            } else if(marks >= 50){
+                console.log("Grade C");
+            } else {
+                console.log("fail");
+            }
+
+    // Question 4: Maximum of two numbers
+            let number1 = 6;
+            let number2= 6;
+            if (number1 > number2){
+                console.log("Number 1 is greater ");
+            } else if (number1 < number2) {
+                console.log("Number 2 is Greater");
+            } else {
+                console.log("Both are equal");   
+            }
+    </script>
+</body>
+</html>
