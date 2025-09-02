@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS simple calculator</title>
+</head>
+<body>
+    <script>
+        let x = Number(prompt("Enter 1st number"));
+        let z = prompt("Enter operators you want to perform")
+        let y = Number(prompt("Enter 2nd Number"));
+        let result;
+        switch(z){
+            case '+':
+                result = x + y ;
+                console.log(result);
+                break;
+            case '-':
+                result = x - y;
+                console.log(result);
+                break;
+            case '*': 
+                result = x * y;
+                console.log(result);
+                break;
+            case '/':
+                result = x / y;
+                console.log(result);
+                break;
+            case '**':
+                result = x ** y;
+                console.log(result);
+                break;
+            case '%':
+                result = x % y;
+                console.log(result);
+                break;   
+            default :
+                console.log("Invalid Operator ! Please use +, -, /, *, %, **");
+                break; 
+        }
+    </script>
+</body>
+</html>
