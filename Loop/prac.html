@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Even odd checker
+        let input = Number(prompt("Enter number"))
+        for (let i = 1; i <= input; i++){
+            if (i % 2 !=0){
+                console.log(i);
+            }
+        }
+
+Factorial
+function Factorial(n) {
+    if (n < 0) {
+        return "Invalid input! Factorial not defined for negative numbers.";
+    }
+
+    let x = 1;
+    while (n > 1) {
+        x *= n;
+        n--;
+    }
+    return x;
+}
+
+let y = Number(prompt("Enter Number"));
+console.log(Factorial(y));
+
+
+
+    </script>
+</body>
+</html>
