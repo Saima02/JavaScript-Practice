@@ -7,62 +7,82 @@
 </head>
 <body>
     <script>
-    //    let age = 12;
-    //    if (age >= 18){
-    //     console.log("You can vote");
-    //    } else {
-    //     console.log("You cannot vote");
-    //    }
+       let age = 12;
+       if (age >= 18){
+        console.log("You can vote");
+       } else {
+        console.log("You cannot vote");
+       }
 
-    // let marks = Number(prompt("Enter your marks"));
-    // if (marks > 90) {
-    //     console.log("A++");
-    // } else if (marks > 80) {
-    //     console.log("A");
-    // } else if (marks > 70) {
-    //     console.log("B++");
-    // }else if (marks > 60) {
-    //     console.log("B");
-    // } else {
-    //     console.log("Low marks");        
-    // }
+    let marks = Number(prompt("Enter your marks"));
+    if (marks > 90) {
+        console.log("A++");
+    } else if (marks > 80) {
+        console.log("A");
+    } else if (marks > 70) {
+        console.log("B++");
+    }else if (marks > 60) {
+        console.log("B");
+    } else {
+        console.log("Low marks");        
+    }
 
-    // let marks2 = Number(prompt("Enter your marks"));
-    // if (marks2 >= 35) {
-    //     console.log("Pass");
-    //     if (marks2 >= 75 ) {
-    //         console.log("Distinction");
-    //     }
-    // } else {
-    //     console.log("Fail"); 
-    // }
+    let marks2 = Number(prompt("Enter your marks"));
+    if (marks2 >= 35) {
+        console.log("Pass");
+        if (marks2 >= 75 ) {
+            console.log("Distinction");
+        }
+    } else {
+        console.log("Fail"); 
+    }
 
-    // const mark = 34;
-    // const result = (mark >= 35) ? "PASSED" : "FAILED";
-    // console.log(result);
+    const mark = 34;
+    const result = (mark >= 35) ? "PASSED" : "FAILED";
+    console.log(result);
 
-    // const grade = prompt("Enter your grade");
-    // switch(grade) {
-    //     case "A": 
-    //         console.log("A --> very good");
-    //         break;
-    //     case "B": 
-    //         console.log("B --> Good , Keep Learning");
-    //         break;
-    //     case "C":
-    //         console.log("C --> Need Improvement");
-    //         break;
-    //     case "D":
-    //     case "E":
-    //     case "F":
-    //     case "d":
-    //     case "e":
-    //     case "f":
-    //         console.log("Not good");
-    //         break; 
-    //     default: 
-    //     console.log("Invalid Grade"); 
-    // }
+    const grade = prompt("Enter your grade");
+    switch(grade) {
+        case "A": 
+            console.log("A --> very good");
+            break;
+        case "B": 
+            console.log("B --> Good , Keep Learning");
+            break;
+        case "C":
+            console.log("C --> Need Improvement");
+            break;
+        case "D":
+        case "E":
+        case "F":
+        case "d":
+        case "e":
+        case "f":
+            console.log("Not good");
+            break; 
+        default: 
+        console.log("Invalid Grade"); 
+    }
+
+        let string = "banana";
+    if(string[0] === "a"){
+        if(string.length > 5) {
+             console.log("Your String is good");
+        } else {
+        console.log("your string is not good");
+    }
+    } else {
+        console.log("your string is not good");
+    }
+
+
+    // shortcut 
+    let str = 'apple';
+    if (str[0] === 'a' && str.length > 3){
+        console.log('goot string');
+    } else {
+        console.log('not a good string');  
+    }
 
     </script>
 </body>
