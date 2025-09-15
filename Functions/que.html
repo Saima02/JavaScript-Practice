@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// sum
+        function sum(a,b){
+            const sum = a + b;
+            console.log("result = ", sum);
+        }
+
+        const a = 5;
+        const b = 7;
+        sum(a,b);
+
+
+// Multiply
+        function multiply(x,y){
+            const multiply = x * y;
+            console.log("result = ", multiply);
+        }
+
+        const x = 4;
+        const y = 5;
+        multiply(x,y);
+
+
+// square of
+        function sqr(r){
+            const sqr = r * r;
+            console.log("Square = ", sqr);
+        }
+        const r = 4;
+        sqr(r);
+
+
+// To find biggest number
+        function largest(a,b,c,d){
+            let biggest = a;
+            if (b > biggest){
+                biggest = b;
+            }
+            if (c > biggest){
+                biggest = c;
+            }
+            if (d > biggest){
+                biggest = d;
+            }
+            return biggest;
+        }
+        console.log(largest(3, 7, 8, 45, 5));
+
+// To find Vowels and consonant
+        function counter(str){
+            let vcount = 0;
+            let c_count = 0;
+            let vowels = "aeiouAEIOU";
+            let consonant = "BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz";
+            for (let i = 0; i < str.length; i++){
+                if (vowels.includes(str[i])){
+                    vcount++;
+                } else if (consonant.includes(str[i])){
+                    c_count++;   
+                }
+            }
+
+            console.log("Vowels :", vcount);
+            console.log("consonants : ", c_count);
+            return {vowels: vcount, consonant: c_count};
+        }
+        let input = prompt("Enter a word to find");
+        counter(input);           
+    </script>
+</body>
+</html>
